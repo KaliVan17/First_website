@@ -1,0 +1,426 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/static/OpenSans-Regular.ttf);
+}
+a {
+    font-family: 'OpenSans';
+}
+p {
+    font-family: 'OpenSans';
+} 
+.header {
+    display: grid;
+    grid-template-columns: repeat(3,600px);
+    justify-content: center;
+    place-items: center;
+}
+.header_img {
+    width: 300px;
+    height: 125px;
+    object-fit: cover;
+}
+.header_name {
+    width: 837px;
+    height: 100px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+.header_basket {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-decoration: none;
+    width: 300px;
+    height: 100px;
+}
+.cart {
+    margin-left: 230px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    position: fixed;
+}
+.basket_count {
+    display: flex;
+    position: absolute;
+    position: fixed;
+    background-color: #d62240;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+    top: 25px;
+    right: 20px;
+}
+.header_basket_text {
+    font-size: 20px;
+    color: #02C023;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    justify-content: center;
+    place-items: center;
+    background: #02C023;
+    height: 55px;
+}
+.navigation a {
+    text-decoration: none;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    font-size: 24px;
+}
+#slider {
+    position: relative;
+    width: 965px;
+    height: 590px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slider-mover {
+    position: absolute;
+    width: 2895px; /* 3 изображения по 300px */
+    height: 590px;
+    left: 0;
+    transition: transform 2s ease-in-out; /* Анимация перехода */
+}
+#slider img {
+    width: 965px;
+    height: 590px;
+    float: left; /* Располагаем изображения горизонтально */
+    border-radius: 20px;
+}
+.block_about_us_first {
+    width: 965px;
+    height: 210px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #02C023;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.block_about_us_second {
+    width: 965px;
+    height: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #02C023;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.about_us_zagolovok {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.about_us_text {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.contact_information_block {
+    display: grid;
+    grid-template-columns: repeat(2,800px);
+    justify-content: center;
+    place-items: center;
+    text-align: left;
+    background: #02C023;
+    height: 230px;
+    margin-bottom: 0;
+}
+.contact_information_mail_and_number {
+    justify-content: left;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.contact_information_advertisement {
+    justify-content: left;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/* --------------katalog-------------- */
+.katalog_head {
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.katalog_technika {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    place-items: center;
+    justify-content: center;
+    gap: 325px;
+    margin-bottom: 310px;
+}
+.katalog_tecnika_block {
+    position: relative;
+    width: 400px;
+}
+.katalog_technika_image {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 230px;
+    border-radius: 30px;
+}
+.katalog_technika_name {
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+    margin-top: 170px;
+    background: #02C023;
+    opacity: 80%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.katalog_technika_name_text {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* --------------novosti-------------- */
+.news {
+    width: 1300px;
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+.news_zagolovok {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.news_image {
+    float: left;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.news_image_settings {
+    width: 375px;
+    height: 220px;
+    border-radius: 30px;
+}
+.news_text {
+    float: right;
+    width: 875px;
+}
+.news_head {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0;
+    text-align: left;
+}
+.news_about {
+    font-size: 17px;
+    margin-top: 0;
+    text-align: justify;
+}
+.news_data {
+    font-size: 15px;
+    margin-top: 0;
+    text-align: justify;
+}
+/* --------------traktori-------------- */
+.card {
+    width: auto;
+    height: 850px;
+}
+.text_rouble {
+    font-size: 26px;
+    margin-top: 0;
+}
+.tech_head {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.tech_head_text {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+}
+.tech_sell {
+    float: left;
+    width: 400px;
+    margin-left: 75px;
+}
+.tech_sell img {
+    width: 625px;
+    height: 400px;
+    border-radius: 30px;
+}
+.grid_price_block {
+    display: grid;
+    grid-template-columns: 120px 400px;
+    align-items: center;
+    align-content: center;
+}
+.tech_price {
+    font-size: 35px;
+}
+.tech_price_text {
+    font-size: 35px;
+    margin: 0;
+}
+.add_button {
+    background-color: #02C023;
+    color: #FFFFFF;
+    width: 215px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    border-style: none;
+    margin-top: 10px;
+}
+.add_button:hover {
+    background-color: #FFFFFF;
+    color: #02C023;
+    border-style:groove;
+    border-color: #02C023;
+}
+.information-about {
+    float: right;
+    width: 717px;
+    margin-right: 40px;
+}
+.information-about_head {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+.information-about_text {
+    font-size: 17px;
+    text-align: justify;
+}
+.information-about_characteristics {
+    font-size: 17px;
+}
+.information-about_characteristics_head {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.information-about_characteristics_text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kolvo_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 215px;
+    height: 40px;
+    background: #02C023;
+    border-radius: 30px;
+    margin-top: 0px;
+}
+.kolvo_block button {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.kolvo_block p {
+    color: #ffffff;
+    font-size: 22px;
+}
+/* --------------korzina-------------- */
+.korzina_head {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.korzina_head_text {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+}
+.grid_block_korzina {
+    display: grid;
+    grid-template-columns: 350px 395px 150px 280px 100px;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.tovar_korzina_image {
+    width: 375px;
+    height: 200px;
+    border-radius: 30px;
+}
+.tovar_korzina_name {
+    font-size: 20px;
+}
+.tovar_korzina_price {
+    font-size: 22px;
+}
+.korzina_button_buying {
+    width: 300px;
+    height: 50px;
+    background: #02C023;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.korzina_button_buying_text_button {
+    width: 300px;
+    height: 70px;
+    text-decoration: none;
+    text-align: center;
+}
+.korzina_button_buying_text {
+    width: 300px;
+    height: 70px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.deleteButton {
+    color: red;
+    font-size: 18px;
+    background: #FFFFFF;
+    border: 0;
+}
+.itog {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
